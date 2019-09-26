@@ -1,0 +1,19 @@
+﻿<Window x:Class="PhysicsSimulation_2D.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhysicsSimulation_2D"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1280" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid Height="40" Margin="10,10,10,0" VerticalAlignment="Top">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+            </Grid.Background>
+            <Button x:Name="RenderEllipseButton" Content="Render Ellipse" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="98" Height="20" Click="RenderEllipseButton_Click"/>
+        </Grid>
+        <Grid x:Name="CanvasGrid" Margin="10,60,10,10" Background="#FF000046"/>
+
+    </Grid>
+</Window>
